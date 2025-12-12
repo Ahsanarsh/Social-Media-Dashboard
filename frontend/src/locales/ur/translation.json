@@ -1,0 +1,90 @@
+{
+  "common": {
+    "home": "ہوم",
+    "explore": "دریافت کریں",
+    "notifications": "اطلاعات",
+    "profile": "پروفائل",
+    "bookmarks": "محفوظ",
+    "settings": "ترتیبات",
+    "logout": "لاگ آؤٹ",
+    "login": "لاگ ان",
+    "signup": "سائن اپ",
+    "search": "تلاش کریں"
+  },
+  "post": {
+    "whatsHappening": "کیا ہو رہا ہے؟",
+    "post": "پوسٹ",
+    "posting": "پوسٹ ہو رہی ہے...",
+    "addPhoto": "تصویر شامل کریں",
+    "repost": "دوبارہ پوسٹ",
+    "quote": "اقتباس",
+    "reply": "جواب",
+    "like": "پسند",
+    "share": "شیئر",
+    "bookmark": "محفوظ کریں",
+    "delete": "حذف کریں",
+    "edit": "ترمیم",
+    "comment": "تبصرہ",
+    "comments": "تبصرے",
+    "likes": "پسندیدگی",
+    "reposts": "ری پوسٹس"
+  },
+  "profile": {
+    "followers": "فالورز",
+    "following": "فالونگ",
+    "posts": "پوسٹس",
+    "replies": "جوابات",
+    "media": "میڈیا",
+    "editProfile": "پروفائل میں ترمیم",
+    "follow": "فالو کریں",
+    "unfollow": "ان فالو",
+    "following_status": "فالونگ",
+    "bio": "تعارف",
+    "location": "مقام",
+    "website": "ویب سائٹ",
+    "joinedDate": "شامل ہوئے"
+  },
+  "trending": {
+    "trendingHashtags": "مقبول ہیش ٹیگز",
+    "whoToFollow": "فالو کرنے کے لیے",
+    "trending": "مقبول",
+    "noPosts": "کوئی پوسٹ نہیں ملی"
+  },
+  "notifications": {
+    "title": "اطلاعات",
+    "markAllRead": "سب کو پڑھا ہوا نشان زد کریں",
+    "noNotifications": "ابھی تک کوئی اطلاع نہیں",
+    "followedYou": "نے آپ کو فالو کیا",
+    "likedYour": "نے آپ کی پوسٹ پسند کی",
+    "commentedOn": "نے آپ کی پوسٹ پر تبصرہ کیا",
+    "repostedYour": "نے آپ کی پوسٹ دوبارہ شیئر کی",
+    "quotedYour": "نے آپ کی پوسٹ کا اقتباس دیا",
+    "mentionedYou": "نے آپ کا ذکر کیا"
+  },
+  "auth": {
+    "email": "ای میل",
+    "password": "پاس ورڈ",
+    "name": "نام",
+    "username": "یوزر نیم",
+    "loginTitle": "سوشل میڈیا میں لاگ ان کریں",
+    "signupTitle": "اپنا اکاؤنٹ بنائیں",
+    "alreadyHaveAccount": "پہلے سے اکاؤنٹ ہے؟",
+    "dontHaveAccount": "اکاؤنٹ نہیں ہے؟",
+    "verifyEmail": "ای میل کی تصدیق کریں",
+    "enterOTP": "OTP داخل کریں",
+    "verify": "تصدیق کریں",
+    "resendOTP": "OTP دوبارہ بھیجیں"
+  },
+  "messages": {
+    "success": "کامیاب",
+    "error": "خرابی",
+    "loading": "لوڈ ہو رہا ہے...",
+    "noResults": "کوئی نتیجہ نہیں ملا",
+    "somethingWentWrong": "کچھ غلط ہو گیا",
+    "tryAgain": "دوبارہ کوشش کریں",
+    "cancel": "منسوخ کریں",
+    "save": "محفوظ کریں",
+    "close": "بند کریں",
+    "confirm": "تصدیق کریں"
+  }
+}

@@ -1,0 +1,233 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* Smooth transitions for theme switching */
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+  /* Safe area insets for mobile devices */
+  --safe-area-top: env(safe-area-inset-top);
+  --safe-area-bottom: env(safe-area-inset-bottom);
+  --safe-area-left: env(safe-area-inset-left);
+  --safe-area-right: env(safe-area-inset-right);
+}
+
+* {
+  /* Smooth scrolling */
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-gray-50 text-gray-900 transition-colors duration-300;
+  /* Prevent overscroll bounce on mobile */
+  overscroll-behavior-y: none;
+  /* Better tap highlighting */
+  -webkit-tap-highlight-color: transparent;
+}
+
+.dark body {
+  @apply bg-gray-950 text-gray-100;
+}
+
+/* Enhanced Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-300 rounded-full hover:bg-gray-400 dark:bg-gray-700 dark:hover:bg-gray-600;
+  transition: background-color 0.2s ease;
+}
+
+/* Thin scrollbar for horizontal scroll */
+::-webkit-scrollbar-horizontal {
+  height: 4px;
+}
+
+/* Custom utility classes for responsive design */
+.touch-target {
+  /* Minimum touch target size for mobile */
+  @apply min-h-[44px] min-w-[44px];
+}
+
+.fluid-text {
+  /* Fluid typography */
+  font-size: clamp(0.875rem, 2vw, 1rem);
+}
+
+.fluid-heading {
+  font-size: clamp(1.25rem, 4vw, 1.5rem);
+}
+
+/* Safe area padding for mobile devices */
+.safe-top {
+  padding-top: max(1rem, var(--safe-area-top));
+}
+
+.safe-bottom {
+  padding-bottom: max(1rem, var(--safe-area-bottom));
+}
+
+/* Smooth micro-animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse-subtle {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.3s ease-out;
+}
+
+.animate-slide-up {
+  animation: slideUp 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Better focus styles for accessibility */
+*:focus-visible {
+  @apply outline-none ring-2 ring-violet-500 ring-offset-2 ring-offset-white dark:ring-offset-black;
+}
+
+/* Remove focus ring for mouse users */
+*:focus:not(:focus-visible) {
+  outline: none;
+  box-shadow: none;
+}
+
+/* Smooth image loading */
+img {
+  @apply transition-opacity duration-300;
+}
+
+img[loading="lazy"] {
+  @apply opacity-0;
+}
+
+img[loading="lazy"].loaded,
+img:not([loading="lazy"]) {
+  @apply opacity-100;
+}
+
+/* Responsive container */
+.container-responsive {
+  @apply w-full mx-auto px-4 sm:px-6 lg:px-8;
+  max-width: 1280px;
+}
+
+/* Glass morphism effect */
+.glass {
+  @apply bg-white/80 dark:bg-gray-900/80 backdrop-blur-md;
+}
+
+/* Interactive card hover effects */
+.card-interactive {
+  @apply transition-all duration-200 hover:shadow-lg hover:-translate-y-0.5;
+}
+
+/* Mobile-optimized bottom spacing */
+.pb-mobile-safe {
+  @apply pb-20 md:pb-0;
+}
+
+/* Improved touch interactions */
+button,
+a,
+[role="button"] {
+  @apply transition-all duration-200;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+button:active,
+a:active,
+[role="button"]:active {
+  @apply scale-95;
+}
+
+/* Responsive grid system */
+.grid-responsive {
+  @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4;
+}
+
+/* Full-screen overlay for modals */
+.modal-overlay {
+  @apply fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm;
+}
+
+/* Mobile: full screen, Desktop: centered modal */
+.modal-content {
+  @apply w-full h-full sm:h-auto sm:max-w-lg sm:rounded-2xl shadow-xl overflow-hidden mx-0 sm:mx-4;
+}
+
+/* Horizontal scroll container for mobile tabs */
+.scroll-horizontal {
+  @apply flex overflow-x-auto snap-x snap-mandatory;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scroll-horizontal::-webkit-scrollbar {
+  display: none;
+}
+
+.scroll-horizontal > * {
+  @apply snap-start;
+}
+
+/* Hide scrollbar but keep functionality */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Responsive text truncation */
+.truncate-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.truncate-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

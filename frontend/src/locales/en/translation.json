@@ -1,0 +1,90 @@
+{
+  "common": {
+    "home": "Home",
+    "explore": "Explore",
+    "notifications": "Notifications",
+    "profile": "Profile",
+    "bookmarks": "Bookmarks",
+    "settings": "Settings",
+    "logout": "Logout",
+    "login": "Login",
+    "signup": "Sign Up",
+    "search": "Search"
+  },
+  "post": {
+    "whatsHappening": "What's happening?",
+    "post": "Post",
+    "posting": "Posting...",
+    "addPhoto": "Add Photo",
+    "repost": "Repost",
+    "quote": "Quote",
+    "reply": "Reply",
+    "like": "Like",
+    "share": "Share",
+    "bookmark": "Bookmark",
+    "delete": "Delete",
+    "edit": "Edit",
+    "comment": "Comment",
+    "comments": "Comments",
+    "likes": "Likes",
+    "reposts": "Reposts"
+  },
+  "profile": {
+    "followers": "Followers",
+    "following": "Following",
+    "posts": "Posts",
+    "replies": "Replies",
+    "media": "Media",
+    "editProfile": "Edit Profile",
+    "follow": "Follow",
+    "unfollow": "Unfollow",
+    "following_status": "Following",
+    "bio": "Bio",
+    "location": "Location",
+    "website": "Website",
+    "joinedDate": "Joined"
+  },
+  "trending": {
+    "trendingHashtags": "Trending Hashtags",
+    "whoToFollow": "Who to follow",
+    "trending": "Trending",
+    "noPosts": "No posts found"
+  },
+  "notifications": {
+    "title": "Notifications",
+    "markAllRead": "Mark all as read",
+    "noNotifications": "No notifications yet",
+    "followedYou": "followed you",
+    "likedYour": "liked your post",
+    "commentedOn": "commented on your post",
+    "repostedYour": "reposted your post",
+    "quotedYour": "quoted your post",
+    "mentionedYou": "mentioned you"
+  },
+  "auth": {
+    "email": "Email",
+    "password": "Password",
+    "name": "Name",
+    "username": "Username",
+    "loginTitle": "Login to Social Media",
+    "signupTitle": "Create your account",
+    "alreadyHaveAccount": "Already have an account?",
+    "dontHaveAccount": "Don't have an account?",
+    "verifyEmail": "Verify Email",
+    "enterOTP": "Enter OTP",
+    "verify": "Verify",
+    "resendOTP": "Resend OTP"
+  },
+  "messages": {
+    "success": "Success",
+    "error": "Error",
+    "loading": "Loading...",
+    "noResults": "No results found",
+    "somethingWentWrong": "Something went wrong",
+    "tryAgain": "Try again",
+    "cancel": "Cancel",
+    "save": "Save",
+    "close": "Close",
+    "confirm": "Confirm"
+  }
+}
